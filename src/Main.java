@@ -1,3 +1,13 @@
+/*
+Nama Kelompok:
+Dimas Bagas Saputro     - 1301228515
+Kelvin Pradiza Lazuardy - 1301228513
+M Riko Trisaputra       - 1301228514
+
+Program CFG Seleksi Kondisi IF Java
+Program Sudah Termasuk Lexical Analyzer dan Parser nya.
+ */
+
 import java.util.Scanner;
 
 class Lexer {
