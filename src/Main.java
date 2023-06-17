@@ -6,6 +6,10 @@ M Riko Trisaputra       - 1301228514
 
 Program CFG Seleksi Kondisi IF Java
 Program Sudah Termasuk Lexical Analyzer dan Parser nya.
+
+S -> AB
+A -> aA | ε
+B -> bBc| d
  */
 
 import java.util.Scanner;
@@ -129,7 +133,9 @@ public class Main {
          */
         System.out.print("Masukkan Input: ");
         String input = scanner.next();
+        // Lexer akan membaca satu persatu input string yang dimasukkan
         Lexer lexer = new Lexer(input);
+        // Setelah itu string yang sudah dibaca akan di periksa apakah string diterima atau ditolak di dalam Parser
         Parser parser = new Parser(lexer);
         try {
             parser.parse();
